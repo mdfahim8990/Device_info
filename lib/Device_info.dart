@@ -39,9 +39,9 @@ class _DeviceInfoState extends State<DeviceInfo> {
       builder: (context, snapshot) {
         return Column(
           children: [
-            showCard('Device Id', "${snapshot.data!.deviceId}"),
             showCard('Device Name', "${snapshot.data!.computerName}"),
-//showCard('Device Model',"${snapshot.data!.}"),
+            showCard('User Name', "${snapshot.data!.userName}"),
+            showCard('Device Id', "${snapshot.data!.deviceId}"),
             showCard('Network Ip', "${ip}"),
 
             TextButton(
